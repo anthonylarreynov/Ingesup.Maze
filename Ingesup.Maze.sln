@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{6DB06033-2784-4B5E-A06A-C0080E04EFAE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{4AF17ECE-0463-434E-B7A4-DE2BCE54D2E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{14D208D4-B4F0-4D7B-8A17-188909D65695}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ingesup.Maze.Core", "Ingesup.Maze.Core\Ingesup.Maze.Core.csproj", "{40C52677-4871-4600-8A38-006AF673E183}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ingesup.Maze.Server.Core", "Ingesup.Maze.Server.Core\Ingesup.Maze.Server.Core.csproj", "{6A4CA114-1F7D-416F-B21D-ED43FBA4BD71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ingesup.Maze.Server.Console", "Ingesup.Maze.Server.Console\Ingesup.Maze.Server.Console.csproj", "{F9F3845F-26BD-4E47-BF10-11B6989FEACB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ingesup.Maze.Core.Entity", "Ingesup.Maze.Core.Entity\Ingesup.Maze.Core.Entity.csproj", "{1FDB9942-B018-4ECA-97F0-036227EF052E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ingesup.Maze.Server.Web", "Ingesup.Maze.Server.Web\Ingesup.Maze.Server.Web.csproj", "{50150FB0-5894-4C1B-AC7F-8822DFDE9D1E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40C52677-4871-4600-8A38-006AF673E183}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40C52677-4871-4600-8A38-006AF673E183}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40C52677-4871-4600-8A38-006AF673E183}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40C52677-4871-4600-8A38-006AF673E183}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A4CA114-1F7D-416F-B21D-ED43FBA4BD71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A4CA114-1F7D-416F-B21D-ED43FBA4BD71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A4CA114-1F7D-416F-B21D-ED43FBA4BD71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A4CA114-1F7D-416F-B21D-ED43FBA4BD71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9F3845F-26BD-4E47-BF10-11B6989FEACB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9F3845F-26BD-4E47-BF10-11B6989FEACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9F3845F-26BD-4E47-BF10-11B6989FEACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9F3845F-26BD-4E47-BF10-11B6989FEACB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FDB9942-B018-4ECA-97F0-036227EF052E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FDB9942-B018-4ECA-97F0-036227EF052E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FDB9942-B018-4ECA-97F0-036227EF052E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FDB9942-B018-4ECA-97F0-036227EF052E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50150FB0-5894-4C1B-AC7F-8822DFDE9D1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50150FB0-5894-4C1B-AC7F-8822DFDE9D1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50150FB0-5894-4C1B-AC7F-8822DFDE9D1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50150FB0-5894-4C1B-AC7F-8822DFDE9D1E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{40C52677-4871-4600-8A38-006AF673E183} = {14D208D4-B4F0-4D7B-8A17-188909D65695}
+		{6A4CA114-1F7D-416F-B21D-ED43FBA4BD71} = {6DB06033-2784-4B5E-A06A-C0080E04EFAE}
+		{F9F3845F-26BD-4E47-BF10-11B6989FEACB} = {6DB06033-2784-4B5E-A06A-C0080E04EFAE}
+		{1FDB9942-B018-4ECA-97F0-036227EF052E} = {14D208D4-B4F0-4D7B-8A17-188909D65695}
+		{50150FB0-5894-4C1B-AC7F-8822DFDE9D1E} = {6DB06033-2784-4B5E-A06A-C0080E04EFAE}
+	EndGlobalSection
+EndGlobal

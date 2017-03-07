@@ -1,0 +1,25 @@
+﻿/*****************************************************\
+|*                                                   *|
+|*                    Default CSS                    *|
+|*                                                   *|
+\*****************************************************/
+
+.default                    { }
+.default .header            { }
+.default .header .logo      { }
+.default .body              { margin:0 auto; }
+.default .body .tbl-head    { }
+.default .body .tbl-head th { font-size:1.2em; }
+.default .body .tbl-body    { }
+.default .body .tbl-body td { }
+.default .body .create-date { width:140px; }
+.default .body .key         { width:300px; }
+.default .body .difficulty  { width:80px; }
+.default .body .created-by  { width:110px; }
+.default .body .nb-players  { width:100px; }
+
+.default .scroll                       { width:747px; }
+.default .scroll .tbl-head .nb-players { padding-right:17px; }
+.default .scroll .tbl-body             { overflow-y:scroll; }
+
+.default .no-scroll                    { width:730px; }

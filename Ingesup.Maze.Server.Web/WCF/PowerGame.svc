@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Ingesup.Maze.Server.Web.WCF.PowerGame" CodeBehind="PowerGame.svc.cs" %>

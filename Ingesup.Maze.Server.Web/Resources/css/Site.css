@@ -1,0 +1,23 @@
+﻿/**************************************************\
+|*                                                *|
+|*                    Site CSS                    *|
+|*                                                *|
+\**************************************************/
+
+.clearfix:after       { content:"."; display:block; clear:both; visibility:hidden; line-height:0; height:0; }
+.clearfix             { display:block; }
+html[xmlns] .clearfix { display:block; }
+* html .clearfix      { height:1%; }
+
+body { margin:10px; font-size:12px; font-family:Verdana; color:#004A7F; }
+
+.title { font-weight:bold; font-size:1.1em; }
+
+table            { padding:0; margin:0; width:100%; }
+th               { margin:0; padding:0.2em 0; border-right:1px solid #666; background-color:#BBB; text-align:center; font-size:1.1em; }
+th:last-child    { border-right:0; }
+td               { margin:0; padding:0.2em 0; border-right:1px dotted #666; border-bottom:1px solid #666; background-color:#FFF; text-align:center; font-size:1em; }
+td:last-child    { border-right:0; }
+.odd td          { }
+.even td         { background-color:#EEE; }
+tr:last-child td { border-bottom:0; }

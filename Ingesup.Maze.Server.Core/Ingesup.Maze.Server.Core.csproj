@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6A4CA114-1F7D-416F-B21D-ED43FBA4BD71}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ingesup.Maze.Server.Core</RootNamespace>
+    <AssemblyName>Ingesup.Maze.Server.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Comparers\GameComparer.cs" />
+    <Compile Include="Comparers\PlayerComparer.cs" />
+    <Compile Include="Entities\Cell.cs" />
+    <Compile Include="Entities\CellList.cs" />
+    <Compile Include="Entities\Difficulty.cs" />
+    <Compile Include="Entities\Direction.cs" />
+    <Compile Include="Entities\Game.cs" />
+    <Compile Include="Entities\Location.cs" />
+    <Compile Include="Entities\LocationList.cs" />
+    <Compile Include="Entities\Maze.cs" />
+    <Compile Include="Entities\Player.cs" />
+    <Compile Include="Entities\PlayerList.cs" />
+    <Compile Include="Entities\Powers.cs" />
+    <Compile Include="Entities\Vector.cs" />
+    <Compile Include="Exceptions\GameException.cs" />
+    <Compile Include="Exceptions\MovePlayerGameException.cs" />
+    <Compile Include="Exceptions\PlayerGameException.cs" />
+    <Compile Include="Extensions\GameCollectionExtension.cs" />
+    <Compile Include="Extensions\PositionExtension.cs" />
+    <Compile Include="GameOrchestrator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ingesup.Maze.Core.Entity\Ingesup.Maze.Core.Entity.csproj">
+      <Project>{1fdb9942-b018-4eca-97f0-036227ef052e}</Project>
+      <Name>Ingesup.Maze.Core.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ingesup.Maze.Core\Ingesup.Maze.Core.csproj">
+      <Project>{40c52677-4871-4600-8a38-006af673e183}</Project>
+      <Name>Ingesup.Maze.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

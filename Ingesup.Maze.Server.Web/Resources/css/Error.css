@@ -1,0 +1,11 @@
+﻿/***************************************************\
+|*                                                 *|
+|*                    Error CSS                    *|
+|*                                                 *|
+\***************************************************/
+
+.error                { }
+.error .header        { margin:0 auto; width:147px; }
+.error .header .logo  { }
+.error .body          { margin:20px auto; width:400px; text-align:center; font-size:1.2em; font-weight:bold; }
+.error .body .message { }
