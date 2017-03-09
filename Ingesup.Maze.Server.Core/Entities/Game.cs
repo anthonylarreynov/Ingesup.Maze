@@ -61,14 +61,11 @@ namespace Ingesup.Maze.Server.Core.Entities
                         }
 
                         this.Players.RemoveAt(i);
-
                         continue;
                     }
 
-                    player.CurrentLocation = Location.Create(startCell);
-                    player.StartDate = DateTime.Now;
-                    player.FinishDate = null;
-                    player.PreviousLocations.Clear();
+                    player.ResetTo(startCell);
+                    SavePlayerTo(path, player);
                 }
             }
         }

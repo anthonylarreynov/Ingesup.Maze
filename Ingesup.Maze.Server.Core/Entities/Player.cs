@@ -195,6 +195,15 @@ namespace Ingesup.Maze.Server.Core.Entities
             }
         }
 
+        internal void ResetTo(Entity.Position position)
+        {
+            this.CurrentLocation = Location.Create(position);
+            this.PreviousLocations.Clear();
+            this.StartDate = DateTime.Now;
+            this.NbMove = 0;
+            this.FinishDate = null;
+        }
+
         internal void SaveTo(string path)
         {
             lock (SyncObj)
