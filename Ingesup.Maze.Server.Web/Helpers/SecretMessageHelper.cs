@@ -10,22 +10,22 @@ namespace Ingesup.Maze.Server.Web.Helper
          *   A. Finish his own game:
          *       1. in Easy mode              => "Want new challenge ? Try to make harder mode..."
          *       2. in Medium mode            => "Want new challenge ? Try to make harder mode..."
-         *       3. in Hard mode              => "Have you ever tried to beat someone else ? {0}"
-         *       4. in Extreme mode           => "Have you ever tried to beat someone else ? {0}"
+         *       3. in Hard mode              => "Have you ever tried to beat someone else on his ground ? Try this: {0}"
+         *       4. in Extreme mode           => "Have you ever tried to beat someone else on his ground ? Try this: {0}"
          *
          *   B. Finish other player game:
          *       1. Loose                     => "Only winners will be awarded..."
          *       2. Win
          *           a. in Easy mode          => "It's not fair in easy mode :)"
-         *           b. in Medium mode        => "Did you find your treasure ?"  | "Need to be a super hero ?\n{0}"
-         *           c. in Hard mode          => "Did you open your chest ?"     | "Need to be a super hero ?\n{0}"
-         *           d. in Extreme mode       => "Did you open your chest ? {0}" | "Need to be a super hero ?\n{0}"
+         *           b. in Medium mode        => "My secret does not match with medium players..."
+         *           c. in Hard mode          => "Need to be a super hero ? Try this: {0}"
+         *           d. in Extreme mode       => "Need to be a super hero ? Try this: {0}"
          * 
          *   C. Finish a multiplayer game with all players in distinct powers and Extreme mode:
-         *       1. Yes                       => "Did you open your chest ?" | "Want more challenge ?\n{0}"
+         *       1. Yes                       => "Did you open your chest ?" | "Want more challenge ?\nTry this: {0}"
          *       2. No                        => "Regroup all the power players in a single game to defeat the extreme mode"
          *   
-         *   D. Finish a game with all powers => "Sorry but you found all the in-game challenges :("
+         *   D. Finish a game with all powers => "You found all the in-game challenges. Can you find the best single power ?"
          * ************************************************* */
 
         public static string ForWcfResponse(Data.Player player)
